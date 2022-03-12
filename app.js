@@ -20,7 +20,7 @@ console.log(tempuid);
 const app = express();
 app.use(express.static(__dirname + "/views"));
 app.set("view engine", "ejs");
-app.use(express.static(path.join(__dirname, 'front')));
+// app.use(express.static(path.join(__dirname, 'front')));
 const parseUrl = express.urlencoded({ extended: true });
 const parseJson = express.json({ extended: true });
 const { response, json } = require('express')
@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
   // let amount = req.query;
   // amount = tempamount;
 
-  res.sendFile("index");
+  res.send("index");
 
 
 });
