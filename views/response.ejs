@@ -1,0 +1,86 @@
+<style>
+    body {
+      background-color: #e9e8e8;
+      font-family: Nunito, sans-serif;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      background: #212529;
+      color: white;
+      padding: 15px;
+      width: 100%;
+    }
+    .footer a {
+      text-decoration: none ;
+      color: white;
+    }
+    .card-btn{
+    margin-top: 2.8rem;
+    
+    bottom: 1.5%;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(238, 230, 230);
+    color: rgb(83, 106, 236);
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+#card-1 .card-btn:hover
+{
+    background-color: blue;
+}
+</style>
+<div class="my-5">
+    <div style="width: 510px; margin: auto" class="card">
+        <div class="card-body">
+            <center>
+                <h2>Payment Status</h2>
+            </center>
+            <div>
+                <table class="table table-borderless">
+                    <tr>
+                        <th>TXNID: </th>
+                        <td><%= data.TXNID %></td>
+                    <tr>
+                        <th>BANKTXNID: </th>
+                        <td><%= data.BANKTXNID %></td>
+                    </tr>
+                    <tr>
+                        <th>TXNAMOUNT: </th>
+                        <td><%= data.TXNAMOUNT %></td>
+                    </tr>
+                    <tr>
+                        <th>BANKNAME: </th>
+                        <td><%= data.BANKNAME %></td>
+                    </tr>
+                    <tr>
+                        <th>GATEWAYNAME: </th>
+                        <td><%= data.GATEWAYNAME %></td>
+                    </tr>
+                    <tr>
+                        <th>STATUS: </th>
+                        <td><%= data.STATUS %></td>
+                    </tr>
+                    <tr>
+                        <th>RESPCODE: </th>
+                        <td><%= data.RESPCODE %></td>
+                    </tr>
+                    <tr>
+                        <th>RESPMSG: </th>
+                        <td><%= data.RESPMSG %></td>
+                    </tr>
+                    <tr>
+                        <th>TXNDATE: </th>
+                        <td><%= data.TXNDATE %></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+   <a href=""><button class="card-btn" id="card-1">Back to homepage</button></a>
+</div>
